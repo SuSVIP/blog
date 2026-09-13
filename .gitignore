@@ -1,0 +1,36 @@
+# Hugo 生成的静态网站产物，不需要提交到git，Github Action会远程构建生成
+public/
+
+# Hugo 资源缓存目录，SCSS编译、图片处理缓存，本地生成，无需版本管理
+resources/_gen/
+
+# Hugo 运行时生成的临时文件
+.hugo_build.lock
+.hugo/
+
+# OS系统生成垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code编辑器配置缓存
+.vscode/*.log
+*.code-workspace-storage.json
+
+# 编辑器、系统临时文件
+*.swp
+*.swo
+*~
+
+# 本地环境变量密钥（如有自定义密钥配置文件）
+.env
+.env.local
+
+# npm依赖（主题自定义编译时才会产生）
+node_modules/
+package-lock.json
+yarn.lock
+
+# 临时草稿文件
+*.tmp.md
+temp-*

@@ -1,0 +1,92 @@
+# 站点基础配置
+#baseURL = "http://localhost:1313/" #本地预览
+baseURL = "https://SuSVIP.github.io/blog/" #上传时
+languageCode = 'zh‑CN'
+title = '我的Hugo博客'
+theme = "PaperMod"
+
+# 开启输出html
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+
+# 分类标签系统
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# PaperMod主题参数
+[params]
+defaultTheme = "auto" # auto跟随系统 / light浅色 / dark深色
+disableThemeToggle = false # 是否关闭明暗切换按钮
+author = "你的名字"
+description = "个人技术博客"
+ShowToc= true #全局默认开启Toc
+#TocOpen= false #目录默认折叠
+
+UseHugoToc= false #不使用Hugo原生目录生成引擎，而是使用主题的生成引擎
+#maxTocLevel= 3 #目录抓取到H3标题
+
+disableImageProcessing = true #关闭 PaperMod 自带图片渲染
+
+# 搜索功能配置
+[params.fuseOpts]
+isCaseSensitive = false
+includeMatches = true
+includeScore = true
+threshold = 0.3
+location = 0
+distance = 100
+minMatchCharLength = 2
+
+# 主页profile模式（可选，关闭则普通列表首页）
+[params.profileMode]
+#enabled = false
+enabled = true
+title = "我的博客"
+subtitle = "记录学习与思考"
+imageUrl = ""
+imageWidth = 120
+imageHeight = 120
+
+# 顶部导航菜单 [[menu.main]] weight越小越靠前
+[[menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "posts"
+name = "文章"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 3
+
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 4
+
+[[menu.main]]
+identifier = "search"
+name = "🔍搜索"
+url = "/search/"
+weight = 5
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 6
+
+# Markdown渲染配置（支持代码块、公式等）
+[markup.goldmark.renderer]
+unsafe = true
+
