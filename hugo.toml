@@ -9,7 +9,6 @@ theme = "PaperMod"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
-
 # 分类标签系统
 [taxonomies]
 category = "categories"
@@ -41,11 +40,11 @@ minMatchCharLength = 2
 
 # 主页profile模式（可选，关闭则普通列表首页）
 [params.profileMode]
-#enabled = false
-enabled = true
+enabled = false
+#enabled = true
 title = "我的博客"
 subtitle = "记录学习与思考"
-imageUrl = ""
+imageUrl = "/blog/avatar.png"
 imageWidth = 120
 imageHeight = 120
 
@@ -63,28 +62,40 @@ url = "/posts/"
 weight = 2
 
 [[menu.main]]
+identifier = "categories"
+name = "分类"
+url = "/categories/"
+weight = 3
+
+[[menu.main]]
 identifier = "tags"
 name = "标签"
 url = "/tags/"
-weight = 3
+weight = 4
 
 [[menu.main]]
 identifier = "archives"
 name = "归档"
 url = "/archives/"
-weight = 4
+weight = 5
 
 [[menu.main]]
 identifier = "search"
 name = "🔍搜索"
 url = "/search/"
-weight = 5
+weight = 6
 
 [[menu.main]]
 identifier = "about"
 name = "关于"
 url = "/about/"
-weight = 6
+weight = 7
+
+#[[menu.main]]
+#identifier = "github"
+#name = "Github"
+#url = "https://github.com/username"
+#weight = 8
 
 # Markdown渲染配置（支持代码块、公式等）
 [markup.goldmark.renderer]
