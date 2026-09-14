@@ -28,6 +28,11 @@ UseHugoToc= false #不使用Hugo原生目录生成引擎，而是使用主题的
 
 disableImageProcessing = true #关闭 PaperMod 自带图片渲染
 
+hideMeta = false
+ShowBreadCrumbs = true #面包屑导航
+ShowReadingTime = true #阅读时长
+ShowPostNavLinks = true #上一篇下一篇
+
 # 搜索功能配置
 [params.fuseOpts]
 isCaseSensitive = false
