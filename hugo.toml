@@ -1,7 +1,8 @@
 # 站点基础配置
 #baseURL = "http://localhost:1313/" #本地预览
 baseURL = "https://SuSVIP.github.io/blog/" #上传时
-languageCode = 'zh‑CN'
+#languageCode = 'zh‑CN'
+locale = "zh-cn"
 title = '我的Hugo博客'
 theme = "PaperMod"
 
